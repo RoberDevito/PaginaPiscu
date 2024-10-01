@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Piscuedits</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/recursos/icono.jpg" />
+
+</head>
+
+<body>
+
+  <nav class="barra">
+      <h1 class="texto-nav">Piscuedits</h1>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main id="inicio" class="sobremi">
+    <div class="text-fondo">
+      <h2>Hi, my name is Gino Cechetto</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nihil quod dolorum rerum maiores culpa
+        quisquam! Officia suscipit, ducimus voluptates repudiandae veniam ullam distinctio, mollitia eius officiis magni
+        ab praesentium?</p>
+    </div>
+    
+    <div class="boton-box">
+      <a href="#videos" class="text"><button class="btn">videos</button></a>
+        <a href="#reservas" class="text"><button class="btn">Reservar cita</button></a>
+    </div>
+  </main>
+
+  <h2 class="text-portafolio">Mi Portafolio</h2>
+  
+  <main id="videos" class="portafolio">
+      <div class="card">
+      <div class="card-details">
+        <p class="text-title">Videos Largos</p>
+        <p class="text-body">Here are the details of the card</p>
+      </div>
+      <a href="videos.html"><button class="card-button">More info</button></a>
+    </div>
+
+    <div class="card">
+      <div class="card-details">
+        <p class="text-title">Videos Cortos</p>
+        <p class="text-body">Here are the details of the card</p>
+      </div>
+      <a href="videos.html"><button class="card-button">More info</button></a>
+    </div>
+
+  </main>
+
+  <main class="reservas-fondo" id="reservas">
+    <h2 class="titulo-reserva">Reservas</h2>
+    <section class="reservas">
+      <form>
+        <div>
+          <label for="text">Ingrese su nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div>
+          <label for="email">Ingrese su correo:</label>
+          <input type="email" id="gmail" name="gmail" required />
+        </div>
+        <div>
+          <label for="special-requests">Deja un mensaje:</label>
+          <input type="text" id="special-requests" name="special-requests"></input>
+        </div>
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+  </main>
+
+
+</body>
+
+</html>

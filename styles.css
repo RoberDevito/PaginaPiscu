@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+h2{
+    margin: 0;
+}
+
+/*nav*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #574142;
+}
+
+.texto-nav{
+
+}
+
+.barra {
+background-color: #0c0505;
+position: sticky;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+top: 0;
+left: 0;
+padding: 10px 2rem;
+z-index: 1;
+}
+
+.barra ul{
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+.barra li{
+    list-style: none;
+    font-weight: bold;
+    font-size:20px;
+    transition: font-size 0.3s;
+
+}
+.barra a:hover{
+    font-size: 25px;
+}
+
+.barra a{
+    color:#fff ;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.barra a:hover{
+    color: #b13535;
+    border-bottom: 3px  solid #fff;
+}
+/*inicio*/
+
+.sobremi{
+    text-align: center;
+    background-image: url('/recursos/inicio.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fefefe;
+}
+
+.text-fondo{
+    margin: 0 auto;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    border: solid 4px #0f0f0f;
+}
+
+.text-fondo h2{
+    font-size: 26px;
+    margin: 5px;
+}
+
+.text-fondo p{
+    font-size: 16px;
+    margin: 5px;
+}
+
+.boton-box{
+ display: flex;
+ gap: 10px;
+ margin: 6px;
+}
+
+
+.btn {
+    border: none;
+    width: 15em;
+    height: 4em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #b13535;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+    font-weight: 600;
+    color: #fefefe  ;
+    font-size: medium;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+  .sparkle {
+    fill: #AAAAAA;
+    transition: all 800ms ease;
+  }
+  
+
+  .text {
+    font-weight: 600;
+    color: #fefefe  ;
+    font-size: medium;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(0deg,#A47CF3,#683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #9917FF;
+    transform: translateY(-2px);
+  }
+  
+  .btn:hover .text {
+    color: white;
+  }
+  
+  .btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+  } 
+
+/*portafolio*/
+
+.portafolio{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #222;
+}
+
+
+.text-portafolio{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #222;
+    color:#fefefe ;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+   .card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+   }
+   
+   .text-body {
+    color: rgb(134, 134, 134);
+   }
+   
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   .card:hover {
+    border-color: #008bf8;
+    box-shadow: 15px 10px 20px 10px rgba(0, 0, 0, 0.25);
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+
+
+
+/*formulario*/
+
+.reservas-fondo{
+   display: grid;
+   background-color:#0f0f0f;
+    height: 100vh;
+    align-content: center;
+}
+
+.titulo-reserva{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fefefe;
+    margin: 5px auto;
+    width: 15%;
+    padding: 10px;
+}
+
+.reservas{
+    background-color: #574142;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.reservas h2{
+    color: #fff;
+    text-align: center;
+}
+
+form{
+    display: grid;
+    gap: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input{
+    width: 100%;
+    border-radius: 4px;
+    border: solid #0c0505;
+    color: #222;
+}
+
+form button{
+    width: 50%;
+    padding: 0.5rem ;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
